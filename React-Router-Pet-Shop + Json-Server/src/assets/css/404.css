@@ -1,0 +1,44 @@
+
+.title-page {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	padding: 5%;
+}
+.img-container{
+	display: flex;
+	justify-content: center;
+}
+.dog-image {
+	width: 50%;
+	max-width: 25rem;
+}
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+.btn--blue {
+	background-color: var(--primary-color);
+	color: var(--contrast-light-color);
+	border: none;
+	border-radius: 1rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.btn--blue:hover {
+	outline: 1px solid var(--primary-color);
+	background-color: var(--contrast-light-color);
+	color: var(--primary-color);
+}
+
+.notfound-text {
+	font-size: var(--font-size-not-found);
+	margin-bottom: 1rem;
+}
+
+.notfound-link {
+	color: var(--primary-color);
+}
