@@ -10,27 +10,33 @@ const StyleHeader = styled.nav`
 	padding: 0 15vw;
 	height: 10vh;
 	align-items: center;
+	background-color: ${(props) => {
+		props.primary ? "white" : "transparent";
+	}};
 `;
 const StyleLogo = styled.img`
 	height: 50px;
 	width: 50px;
 `;
+const BtnHeader = styled.a`
+	text-align: center;
+	border-radius: 3px;
+	padding: 5px 20px;
+	margin: 0 10px;
+	font-weight: 600;
+	border: 2px solid white;
+	color: ${(props) => (props.primario ? "white" : "#3D3D3D")};
+`;
 
 const Header = () => {
 	return (
 		<StyleHeader>
-			<StyleLogo
-				className="imagen-logo"
-				src={logo}
-				alt="Logo Smart Bank"
-			/>
+			<StyleLogo src={logo} alt="Logo Smart Bank" />
 			<div>
-				<a className="btn-secundario" href="https://google.com">
+				<BtnHeader href="https://google.com" primario>
 					Ayuda
-				</a>
-				<a className="btn-primario" href="https://google.com">
-					Salir
-				</a>
+				</BtnHeader>
+				<BtnHeader href="https://google.com">Salir</BtnHeader>
 			</div>
 		</StyleHeader>
 	);
